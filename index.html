@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<title>BGUI - Editor</title>
+	</head>
+	
+	<body style="background-color: #151223;">
+		<script src="main.js"></script>
+		<textarea id="csarea" onkeydown="insertTab(this, event);" tabindex="1" autofocus="autofocus" name="text" rows="20" spellcheck="false" wrap="off"></textarea>
+
+		<div class="dialogbase" id="dialogmain">
+			<h3 class='dialogaddsubtitle'>- Gui Commands</h3>
+			<div class="area_guicommands">
+				<button onclick="addNewgui()"><i class='fas fa-arrow-circle-right'></i> New Gui</button>
+				<button onclick="addGuibutton()"><i class='fas fa-arrow-circle-right'></i> Button</button>
+				<button onclick="addGuitext()"><i class='fas fa-arrow-circle-right'></i> Text</button>
+				<button onclick="addGuifield()"><i class='fas fa-arrow-circle-right'></i> Field</button>
+				<button onclick="addGuiimage()"><i class='fas fa-arrow-circle-right'></i> Image</button>
+				<button onclick="addGuislider()"><i class='fas fa-arrow-circle-right'></i> Slider</button>
+				<button onclick="addGuicheckbox()"><i class='fas fa-arrow-circle-right'></i> <span style='font-size: 12px;'>Checkbox</span></button>
+				<button onclick="addGuiitemmove()"><i class='fas fa-arrow-circle-right'></i> <span style='font-size: 11px;'>Item Move</span></button>
+				<button onclick="addGuititle()"><i class='fas fa-plus-circle'></i> Title</button>
+				<button onclick="addGuibar()"><i class='fas fa-plus-circle'></i> Bar</button>
+				<button onclick="addGuitab()"><i class='fas fa-plus-circle'></i> Tab</button>
+				<button onclick="addGuilist()"><i class='fas fa-plus-circle'></i> List</button>
+			</div>
+			<hr>
+			<h3 class='dialogaddsubtitle'>- Action Commands</h3>
+			<div class="area_actioncommands">
+				<button onclick="addLoop()"><i class='fas fa-arrow-circle-right'></i> Loop</button>
+			</div>
+			
+		</div>
+		
+		<div style="display: none;" class="dialogbase" id="dialogadd">
+			<button onclick="cdialogshow(0)" style="position: absolute; right: 9px; top: 0px;"><i class="fas fa-times-circle"></i> Close</button>
+			<br>
+			<center>
+				<div id="dialogaddtitle"></div>
+				<hr>
+			</center>
+			
+			<div id="dialogaddcontent">
+				<br>
+				<p>Your browser does not support Javascript, lel.</p>
+			</div>
+		</div>
+
+		<p style="position: fixed; bottom: 1px; color: #ffffff6b; font-family: sans-serif; font-size: 12px; right: 50%; user-select: none;">by @SalatielSauer (WIP)</p>
+	<body>
+
+</html>

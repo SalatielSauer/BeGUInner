@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Sauer_default';
+    src: url('default.ttf');
+}
+
+input:focus, textarea:focus, select:focus, .commandValue:focus{
+	outline: none;
+}
+
+hr {
+	border-color: #1f24344a;	
+}
+
+button {
+	background-color: #00000054;
+    color: white;
+    border-style: solid;
+    border-color: #0000004f;
+    padding: 5px;
+    font-family: sans-serif;
+    box-shadow: 0 3px 5px #00000047;
+    cursor: pointer;
+    border-block-end-width: 5px;
+    border-bottom-color: #0000004f;
+	margin: 1px;
+	min-width: 81px;
+    outline-style: none;
+}
+
+button:hover {
+	background-color: #3e336754;
+	box-shadow: 0 3px 5px #3e336754;
+}
+
+.dialogaddTextarea {
+    background-color: #3f4967;
+    border-style: none;
+    resize: none;
+    box-shadow: 0 0 3px 0px #0000009c;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.dialogbase {
+	border-style: solid;
+	position: fixed;
+    left: unset;
+	right: unset;
+    z-index: 2;
+    background-color: #2d3346;
+    border-color: #0000004d;
+    border-width: 15px;
+    box-shadow: 0 0 3px #0000007a;
+}
+
+#csarea {
+    width: 100%;
+    height: 100%;
+    background-color: #2f3a5a;
+    border-style: none;
+    resize: none;
+    color: gainsboro;
+    text-shadow: 0 0 1px black;
+    padding: 15px;
+    position: relative;
+    white-space: pre;
+    word-wrap: normal;
+    overflow-x: auto;
+    overflow-y: auto;
+    /*margin-top: 36px;*/
+	font-size: 15px;	
+	box-shadow: 0 0 20px 1px #000000d1;
+	font-family: 'Sauer_default';
+    background-image: url(icons/beguinner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#dialogmain {
+	top: 5%;
+    right: 2%;
+    width: 20%;
+    height: 79%;
+}
+
+#dialogadd {
+	width: 25%;
+    height: unset;
+    z-index: 3;
+    top: 5%;
+    right: 26.6%; 
+    background-color: #2d3346b8;
+    max-height: 50%;
+	min-height: 50%;
+    overflow-x: auto;
+}
+
+#guide {
+    color: white;
+    font-family: sans-serif;
+    background-color: #00000030;
+    padding: 5px;
+    box-shadow: 0 0 4px 0px #00000082;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*pointer-events: none;*/
+}
+
+.guidetip {
+    background-color: #00000029;
+    padding: 20px;
+    border-radius: 20px;
+};
+
+#dialogaddtitle {
+	color: white;
+	font-family: sans-serif;
+}
+
+#dialogaddcontent {
+	color: white;
+    background-color: #23283a47;
+    padding: 5px;
+}
+
+.dialogaddsubtitle {
+	color: white;
+	font-family: sans-serif;	
+	font-size: small;
+}
+
+.iconpreview {
+    width: 8%;
+    cursor: pointer;
+}
+
+.iconpreview:hover {
+	filter: brightness(150%);
+}
+
+.area_guicommands .area_actioncommands {
+    display: flex;
+    flex-flow: wrap;
+    background-color: #00000026;
+    padding: 5px;
+}
+
+.fa-arrow-circle-right {
+	color: #4CAF50;
+}
+
+.fa-plus-circle {
+    color: #009688;
+}
+
+.fa-times-circle {
+    color: orangered;
+}
+
+i.fas.fa-arrow-circle-right, i.fas.fa-plus-circle {
+    float: left;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Scrollbar by GhostRider (https://codepen.io/GhostRider/pen/GHaFw) */
+
+::-webkit-scrollbar-corner
+{
+	display: none;
+}
+::-webkit-scrollbar-track
+{
+
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	cursor: pointer;
+	width: 12px;
+	background-color: unset;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4799b5;
+}
